@@ -22,15 +22,17 @@ class Node {
     removeChild(node) {
         if (this.left == node) {
             this.left = null;
+         node.parent = null;
         } else if (this.right == node) {
             this.right = null;
+            node.parent = null;
         }
 
     }
 
     remove() {
-        if (!(this.parent == null)) {
-
+        if (this.parent != null) {
+          
         }
     }
 
